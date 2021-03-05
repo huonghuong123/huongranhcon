@@ -1,0 +1,49 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Exercise 1</title>
+			<meta charset="UTF-8">
+			 <meta name="viewport" content="width=device-width, initial-scale=1">
+			 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+			 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+			 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+			 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+	</head>
+	<body>
+		<div class="container">
+		   <form action="#" class="form">
+		   	<div class="container-md mt-3 border">
+                <label>First Name</label>
+                <input class="col-12" type="text" name="fname" id="firstname">
+                <label>Last Name</label>
+                <input class="col-12" type="text" name="lname" id="lastname">
+                <input type="radio" name="gender" id="male">
+                <label> Male</label>
+                <input type="radio" name="gender" id="female">
+                <label>Female</label><br><br>
+                <input class="col-12" type="date"><br><br>
+                <button type="button" class="btn btn-primary">submit</button>
+            </div>
+           </form>		
+		</div>
+		<div class="text-success">
+			<p id="resultName"></p>
+		</div>
+		<script type="text/javascript">
+			function myFunction() {
+			    document.getElementById('firstname').value;
+				document.getElementById('lastname').value;
+				document.getElementById('date');
+				if(fname==""){
+					alert("Trường này bắt buộc nhập!");
+				}
+				else if(lname==""){
+					alert("Trường này bắt buộc nhập!");
+				}
+				else{
+					document.getElementById("resultName").innerHTML="Name: "+fname+" "+lname;
+				}
+			}
+		</script>
+	</body>
+</html>

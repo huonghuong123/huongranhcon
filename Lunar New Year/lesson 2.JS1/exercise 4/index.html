@@ -1,0 +1,31 @@
+<DOCTYPE!>
+    <html lang="en">
+    <head>
+        <title>exercise 4</title>
+        <script>
+            function get() {
+                var gia_tri = document.getElementById("number").value;
+                var giai_thua = 1;
+                var string = "";
+                for(var i = 1; i <= gia_tri; i++){
+                    giai_thua *= i;
+                    if (i != gia_tri) {
+                        string += i + " x ";
+                    }else{
+                        string += i;
+                    }
+             }
+                document.getElementById("result").innerHTML = gia_tri + "! = " + string + "=" + giai_thua;      
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <h3>Tìm giai thừa</h3>
+            <label for="number">Nhập vào hệ số giai thừa</label>
+            <input type="text" name="number" id="number"><br>
+            <button onclick="get()">Tính giai thừa</button>
+            <p id="result"></p>
+         </div>
+    </body>
+</html>

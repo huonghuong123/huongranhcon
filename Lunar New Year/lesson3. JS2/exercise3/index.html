@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+    <script>
+        function cong() {    
+         var a = document.getElementById('numA').value;
+         var b = document.getElementById('numB').value;
+         var result = parseInt(a)+parseInt(b);
+         document.getElementById('result').innerHTML =result;
+        }
+        function tru() {    
+         var a = document.getElementById('numA').value;
+         var b = document.getElementById('numB').value;
+         var result = parseInt(a) - parseInt(b);
+         document.getElementById('result').innerHTML =result;
+        }
+        function nhan() {    
+         var a = document.getElementById('numA').value;
+         var b = document.getElementById('numB').value;
+         var result = parseInt(a) * parseInt(b);
+         document.getElementById('result').innerHTML =result;
+        }
+        function chia() {    
+         var a = document.getElementById('numA').value;
+         var b = document.getElementById('numB').value;
+         var result = parseInt(a) / parseInt(b);
+         document.getElementById('result').innerHTML =result;
+        }
+        
+    </script>
+</head>
+<body>
+    <form>
+        <h3>Máy tính</h3>
+        <label for="">Số thứ nhất: </label>
+        <input type="text"  id="numA"><br><br>
+        <label for="">Số thứ hai: </label>
+        <input type="text" id="numberB"><br><br>
+        <label for="">Kết quả: </label>
+        <span  id="result"></span><br><br>
+       
+        <input type="submit"  onclick= "cong()" value="cộng">
+        <input type="submit" value="trừ" onclick="tru()">
+        <input type="submit"  value="nhân" onclick="nhan()">
+        <input type="submit"  value="chia" onclick="chia()">
+        <input type="reset" value="xóa trắng" onclick="xoa()">
+    </form>
+</body>
+</html>

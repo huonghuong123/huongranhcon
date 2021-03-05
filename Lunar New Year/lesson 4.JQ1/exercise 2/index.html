@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercise 2</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="script.js"></script>
+        <style type="text/css">
+            .box-maths{
+                border: solid gray;
+                width:360px;
+                height: 300px;
+            }
+            .box-title{
+                border-bottom: solid gray;
+                background:#FEFFED;
+            }
+            .btn{
+                background-color: green;
+                color: white;
+            }
+            p{
+                color: blue;
+            }
+        </style>
+    </head>
+<body>
+    <div class="container">
+        <div class="col">
+        <div class="box-maths">
+            <div class="box-title">
+            <h1>SỐ CHẴN LẺ</h1>
+            </div>
+        <form action="#">
+            <label>Nhập số a: </label>
+            <input type="number" name="number"><br>
+            <button type="button" class="bg-success">Kết quả</button>
+            <p>các số chẵn từ 1-10 là: 2, 4, 6, 8, 10</p>
+           <p>các số lẻ từ 1-10 là: 1, 3, 5, 7, 9</p>
+        </form>
+    </div>
+        <p id="le"></p>
+        <p id="chan"></p>
+    </div>
+    <script>
+        function math() {
+           var   a = document.getElementById("a").nodeValue;
+                for(var i=1; i<=a; i++){
+                 if(a%i==0){
+            document.getElementById("chan").innerHTML=i;
+                  }
+            } 
+        }
+    </script>
+</body>
+</html>

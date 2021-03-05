@@ -1,0 +1,59 @@
+<DOCTYPE!>
+<html lang="en">
+    <head>
+        <title>exercise 3</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+        function get() {
+        var a = document.getElementById("num1").value;
+        var b = document.getElementById("num2").value;
+        var c = document.getElementById("num3").value;
+        if (a > b && a > c) {
+            document.getElementById("max").innerHTML = "Max = " + a;
+        } 
+        if( b > a && b > c ){
+            document.getElementById("max").innerHTML = "Max = " + b;        
+        } 
+        if( c > a && c > b){
+            document.getElementById("max").innerHTML = "Max = " + c;
+        }  
+        }
+        function Get() {
+            var a = document.getElementById("num1").value;
+            var b = document.getElementById("num2").value;
+            var c = document.getElementById("num3").value;
+            if (a < b && a < c) {
+                document.getElementById("min").innerHTML = "Min = " + a;
+            }
+            if( b < a && b < c ){
+                document.getElementById("min").innerHTML = "Min = " + b;        
+            }
+            if( c < a && c < b){
+                document.getElementById("min").innerHTML = "Min = " + c;
+            }
+        }
+      </script>
+    </head>
+    <body>
+        <div class="container">
+        <div class="row"><h1>Tìm Max-Min: </h1></div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <label>Nhập vào số thứ nhất: </label><br>
+                    <input type="text" name="sothu1" id="num1"><br>
+                    <Label>Nhập vào số thứ hai: </Label><br>
+                    <input type="text" name="sothu2" id="num2"><br>
+                    <label>Nhập số thứ ba: </label><br>
+                    <input class="mb-3" type="text" name="sothu3" id="num3"><br>
+                    <input class="button" type="button" onclick="get(), Get()" value="Hiển thị max - min" >
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <p id="max"></p>
+                            <p id="min"></p>
+                        </div>
+                    </div>
+            </div>
+   </div>
+</body>
+</html>
