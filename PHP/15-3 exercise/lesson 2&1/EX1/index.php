@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>exercise </title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 		<style>
 		<?php
 		$nameErr = $passwordErr = $userErr = "";
@@ -36,17 +36,17 @@
 	</style>
 	</head>
 	<body>
-		<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+		<form action="login.php" method="post">
 		    <div class="w-50 p-5">
 		        <div class="text-center">
-		            <h1>Lognin:</h1>
+		            <h1>Login:</h1>
 		        </div><br>
-		        <input type='text' name='name' class='form-control bg-light' placeholder='Username'>
+		        <input type='text' name='name' class='form-control bg-light' placeholder='Username' required>
 		        <span class="text-danger"><?php echo $nameErr ?></span><br>
 		        <input type='password' name='password' class='form-control bg-light' placeholder='Password'>
 		        <span class="text-danger"><?php echo $passwordErr ?></span><br>
-		        <input type='submit' value='signin' name='signin' class='btn'>
-		         <input type='reset' value='reset' name='reset' class='btn'>
+		        <input type='submit' value='signin' name='signin'>
+		         <input type='reset' value='reset' name='reset'>
 		        <span class="text-danger"><?php echo $userErr ?></span><br>
 		        <br>
 		    </div>

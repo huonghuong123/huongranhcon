@@ -5,9 +5,9 @@
 	</head>
 	<body>
 		<?php
-			function daysInMonth($x){
-			    $mang = array("31", "28", "31","30", "31", "30", "31", "31", "30", "31","30", "31");
-			    echo $mang[$x-1];
+			function daysInMonth($a){
+			    $arr = array("31", "28", "31","30", "31", "30", "31", "31", "30", "31","30", "31");
+			    echo $arr[$a-1];
 			}
 			daysInMonth(1);
 		?>

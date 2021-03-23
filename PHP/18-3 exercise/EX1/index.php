@@ -27,7 +27,11 @@
 	</head>
 	<body>
 		<div class="ridge">
->
+			<form action="" method="post">
+				<h2>Select a file to upload</h2>
+				<p><input type="file" name="fileToUpload" value="fileToUpload">only jpg, jpeg, png & gif files with maximum size 1 MB is allowed.</p>
+				<button class="btn">Upload</button>
+			</form>
 		</div>
 		<?php
 			$target_dir = "uploads/";
@@ -36,8 +40,8 @@
 			$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 			if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
 			&& $imageFileType != "gif" ) {
-			  echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
-			  $uploadOk = 0;
+			  echo "Sorry, only jpg, jpeg, png & gif files are allowed.";
+			  $uploadOk = 1;
 			}
 		?>
 	</body>
